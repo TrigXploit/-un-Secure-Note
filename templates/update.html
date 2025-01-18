@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block head%}
+<title>Non Secure Note</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center;">Update Note</h1>
+
+    <form action="/update/{{ note.id }}" method="POST" id="submitNote">
+        <label for="noteTitle">Note title</label>
+        <input type="text" name="title" id="title" value="{{ note.title }}" placeholder="The title of the note..">
+
+        <label for="noteContent">Note content</label>
+        <input type="text" name="content" id="content" value="{{ note.content }}" placeholder="The content of the note..">
+
+        <input type="submit" value="Update note">
+    </form>
+</div>
+{% endblock %}

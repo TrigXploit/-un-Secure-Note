@@ -1,0 +1,34 @@
+commands for app
+
+
+Creating the env:
+
+pip3 install virtualenv
+
+python -m venv env
+
+env\Scripts\activate.bat (in cmd)
+
+
+
+
+Install flask:
+
+pip3 install flask flask-sqlalchemy
+
+
+
+
+
+Starting the app:
+
+python app.py (in cmd)
+
+
+
+setting up SQL
+python3
+
+from app import db
+
+db.create_all()
